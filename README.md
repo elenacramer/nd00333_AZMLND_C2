@@ -4,6 +4,8 @@ In this project we will demonstrate an end-to-end ML example, that is, from mode
 
 The data sets is the same as for the previous project, i.e. the data set contains information such as age, marital status, job, education ect. of bank clients and the goal is to predict whether a client will subscribe to a term deposit or not, described by the variable "y". 
 
+![dataset](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/registered_dataset.png)
+
 Two approaches where applied. First one using Automated ML and the second using a Pipeline. Both approaches require loading the data set. 
 
 ## Automated ML 
@@ -28,17 +30,26 @@ The required steps for training, deploying and consuming a model using Automated
   
  ### Key Steps 
 - Experiment is completed
+![experiment_completed](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/completed_AutomatedML_run.png)
+
+-Models of the Automated ML run
+![models](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/Automated_ML_models.png)
+
 
 - Best model of the completed Automated ML run
+![best_model](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/AutomatedML_best_model.png)
 
 - Application Insights is enabled
+![app_insights](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/AutomatedML_app_insights.png)
 
 - Logs (running *logs.py*)
+![Logs](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/running_logs_py.png)
 
 - Swagger running on localhost showing the HTTP API methods 
+![swagger](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/swagger.png)
 
 - Model predictions for the particular clients (running endpoint.py) 
-
+![model_pred](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/model_pred.png)
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 

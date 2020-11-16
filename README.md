@@ -51,6 +51,35 @@ The required steps for training, deploying and consuming a model using Automated
 - Model predictions for the particular clients (running endpoint.py) 
 ![model_pred](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/model_pred.png)
 
+## Pipeline
+The required steps using Python SDK and *Pipeline* object: 
+- Crreate an experiment and attach an AmlCompute cluster 
+- Train
+	- Create AutoMLConfig  object
+- **Create a Pipeline**  
+	- Load data set from datastore
+	- Create AutoMLStep
+	- Create Pipeline object 
+	- Submit experiment 
+	- Retrieve best model 
+- **Publish** and run from REST endpoint
+
+### Key Steps
+- Pipeline is created
+ ![pipeline_created](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/pipeline_created.png) 
+ 
+- The Pipeline Endpoint
+![pipeline_endpoint](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/pipeline_endpoint.png)
+
+- Pipeline is published ( has a REST endpoint and a status of ACTIVE)
+![piblished_pipeline](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/pipeline_rest_endpoint.png)
+
+- Running steps using the *RunDetails Widget* in the notebbok
+![running_steps_notebook](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/run_details_notebook.png)  
+  
+- Scheduled / completed run
+![scheduled_run](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/pipeline_sheduled_run.png)
+
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 

@@ -17,7 +17,7 @@ The required steps for training, deploying and consuming a model using Automated
 - **Deploy the best model** 
 	- Enable Authentication and use Azure Container Instance (ACI)
 	- Enable Application Insights: 
-		- Running the script *logs.py* enables to the view the logs 
+		- Running the script *logs.py* enables to view the logs 
 - **Consume deployed model**
 	- Using *Swagger* 
 		- Download the *swagger.json* file (can be found under the Endpoint section -> deployed model) 
@@ -31,7 +31,7 @@ The required steps for training, deploying and consuming a model using Automated
 - Experiment is completed:
 ![experiment_completed](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/completed_AutomatedML_run.png)
 
--Models of the Automated ML run:
+- Models of the Automated ML run:
 ![models](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/Automated_ML_models.png)
 
 
@@ -39,12 +39,13 @@ The required steps for training, deploying and consuming a model using Automated
 ![best_model](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/AutomatedML_best_model.png)
 
 - Application insights is a useful tool to detect anomalies and visualize performance. Running the script *logs.py* provides informational output produced by the software, i.e. logs. 
-Here we have that the application insights is enabled:
+
+Here we can see that the application insights is enabled:
 ![app_insights](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/AutomatedML_app_insights.png)
 and the logs: 
 ![Logs](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/running_logs_py.png)
 
-- Swagger is a tool that helps build, document, and consume RESTful web services.*swagger.sh* runs the swagger UI container and makes it available on port 9000. After the Swagger UI container is running, we can access the website on http://localhost:9000. Running serve.py enables the contents of swagger.json to be consumed locally by Swagger. The serve.py script will run and serve contents on localhost:8000. Here we can see Swagger running on localhost showing the HTTP API methods: 
+- Swagger is a tool that helps build, document, and consume RESTful web services.*swagger.sh* runs the swagger UI container and makes it available on port 9000. After the Swagger UI container is running, we can access the website on http://localhost:9000. Running *serve.py* enables the contents of swagger.json to be consumed locally by Swagger. It will run and serve contents on localhost:8000. Here we can see Swagger running on localhost showing the HTTP API methods: 
 ![swagger](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/swagger.png)
 
 - We can interact with the endpoint using the script *endpoint.py*. It contains data about two clients we want to make a prediction on. By running the scripts we obtain the desired predictions:

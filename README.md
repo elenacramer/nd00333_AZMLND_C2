@@ -6,7 +6,7 @@ In this project we will demonstrate an end-to-end ML example, that is, from mode
 The data set we will use her is the same as for the previous project, i.e. a collection of bank client information such as age, marital status, job, education ect. and the goal is to predict whether a client will subscribe to a term deposit or not, described by the variable "y". 
 
 ## Overview 
-Generally speaking, deploying a machine learning model simply means to integrate a machine learning model and integrate it into an existing production environment. Before we can deploy a model, we need a to train and register a model. Once the model is registered, we can deploy it as-is. This means that our deployed web service will take the same input data as our trained model and will output the prediction. 
+Generally speaking, deploying a machine learning model simply means to integrate a machine learning model and integrate it into an existing production environment. Before we can deploy a model, we need a to train and save a model (also possible to regist it). Once the model is registered, we can deploy it as-is. This means that our deployed web service will take the same input data as our trained model and will output the prediction. 
 
 ![diagram](https://github.com/elenacramer/nd00333_AZMLND_C2/blob/master/screenshots/diagram.png)
 
